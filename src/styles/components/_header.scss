@@ -1,0 +1,45 @@
+@function calc_column($n) {
+    @return calc(100% / 12 * $n);
+}
+
+header {
+    height: $header-height;
+    padding: $base-spacing - 2px $base-spacing;
+    background-color: $red;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .small-logo {
+        width: calc_column(2);
+    }
+
+    .nav_row {
+        width: calc_column(5);
+        white-space: nowrap;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+
+        a {
+            color: $black;
+            text-decoration: none;
+        }
+
+        @media (max-width: 1440px) {
+            gap: 24px;
+        }
+
+        &.nr_2 {
+            flex-grow: 0;
+            flex-shrink: 1;
+            justify-content: flex-end;
+        }
+    }
+}

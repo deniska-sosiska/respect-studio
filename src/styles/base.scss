@@ -2,7 +2,9 @@
 
 @font-face {
     font-family: "SuisseIntl";
-    src: url("../../public/SuisseIntl-Regular.woff") format("woff"), url("../../public/SuisseIntl-Regular.woff2") format("woff2");
+    src:
+        url("../../public/SuisseIntl-Regular.woff") format("woff"),
+        url("../../public/SuisseIntl-Regular.woff2") format("woff2");
 }
 
 * {
@@ -26,6 +28,7 @@ main {
 p, span, a, ul, ol, h1, h2, h3, h4, h5, h6,
 label, input, textarea, div, button, th, tr, td {
     font-family: "SuisseIntl", serif;
+    line-height: 1;
 }
 
 a, button {
@@ -34,4 +37,12 @@ a, button {
 
 .text-center {
     text-align: center;
+}
+
+section {
+    width: 100%;
+}
+
+section, .container {
+    padding-inline: 20px;
 }

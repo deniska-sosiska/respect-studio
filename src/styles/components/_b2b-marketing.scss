@@ -1,0 +1,104 @@
+.b2b-marketing {
+    padding-block: $base-spacing * 2;
+
+    .small-description {
+        color: $red;
+        font-size: 22px;
+        line-height: 120%;
+    }
+
+    .tabs {
+        padding-top: $base-spacing;
+        color: $white;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .tab {
+        padding: $base-spacing * 2;
+        padding-right: 80px;
+        width: 70%;
+        min-height: 650px;
+        transition: 1s;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .description {
+            padding-right: min(170px, 12%);
+            .index {
+                padding: 0 0 12px 4px;
+                font-size: 22px;
+            }
+
+            h3 {
+                font-size: 60px;
+                font-weight: 400;
+                padding-bottom: 50px;
+            }
+
+            p {
+                font-size: 22px;
+                line-height: 120%;
+            }
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 35px;
+            }
+        }
+
+
+        .action {
+            padding-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .action-image > svg > path {
+                transition: stroke 1s linear;
+            }
+            .btn-content {
+                width: 235px;
+            }
+        }
+
+        &:first-child {
+            background-color: $red;
+        }
+
+        &:last-child {
+            background-color: $black;
+            color: $gray;
+
+            .btn-content {
+                color: $black;
+                background-color: $red;
+
+                path {
+                    fill: $black;
+                }
+            }
+
+            &:hover {
+                transform: translate(-55%, 0);
+                color: $white;
+                .action-image {
+                    path {
+                        fill: $white;
+                        stroke: $white;
+                    }
+                }
+
+                .btn-content {
+                    path {
+                        fill: $black;
+                    }
+                    &:hover {
+                        background-color: $hover-red;
+                    }
+                }
+            }
+        }
+    }
+}
