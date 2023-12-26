@@ -11,7 +11,7 @@
     "preview": "vite preview --host"
   },
   "dependencies": {
-    "gsap": "^3.12.4",
+    "gsap-trial": "^3.12.4",
     "normalize.css": "8.0.1",
     "vue": "3.3.8"
   },

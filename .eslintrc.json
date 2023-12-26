@@ -4,6 +4,7 @@
     "browser": true,
     "es2021": true
   },
+  "ignorePatterns": ["./node_modules/*", "./dist/*"],
   "extends": [
     "eslint:recommended",
     "plugin:vue/vue3-strongly-recommended",
@@ -54,18 +55,13 @@
     "vue/singleline-html-element-content-newline": ["off"],
     "vue/max-attributes-per-line": ["error", {
       "singleline": {
-        "max": 3
+        "max": 5
       },
       "multiline": {
         "max": 1
       }
     }],
-    "vue/html-self-closing": ["error", {
-      "html": {
-        "normal": "never",
-        "void": "always"
-      }
-    }]
+    "vue/html-self-closing": ["off"]
   },
   "overrides": [
     {
@@ -74,7 +70,5 @@
         "indent": "off"
       }
     }
-  ],
-
-  "ignorePatterns": ["./node_modules/*", "./dist/*"]
+  ]
 }

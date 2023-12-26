@@ -1,5 +1,5 @@
 <template>
-    <section class="main-preview">
+    <section class="home-section">
         <div class="logo">
             <img src="src/assets/main-logo.svg" />
         </div>
@@ -34,6 +34,6 @@
                 return currentImageSrc.value = imagesList[0];
             }
         }
-    }, 1400);
+    }, 1200);
 
 </script>

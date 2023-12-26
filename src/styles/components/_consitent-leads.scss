@@ -63,14 +63,22 @@
 
                 &:first-child {
                     justify-content: flex-end;
-                    padding-right: 40px;
+                    .info-block {
+                        padding-right: 40px;
+                    }
                 }
 
-                .info {
+                .info-block {
+                    padding-left: 147px;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                }
+
+                .text {
                     font-size: 22px;
                     line-height: 120%;
                     text-align: right;
-                    padding-inline: 147px 15px;
                 }
                 .value {
                     font-size: 60px;
