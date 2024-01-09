@@ -1,7 +1,7 @@
 <template>
     <section class="home-section">
         <div class="logo">
-            <img src="src/assets/main-logo.svg" />
+            <img src="@/assets/main-logo.svg" />
         </div>
         <div class="agency-small-description">
             <p>Digital Marketing</p>
